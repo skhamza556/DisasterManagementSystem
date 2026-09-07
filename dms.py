@@ -8,7 +8,9 @@ while True:
     r_id = input("Enter Report ID: ")
     loc = input("Enter Location: ")
     typ = input("Enter Type (e.g., Fire): ")
-    disaster_reports[r_id] = f"Type: {typ}, Location: {loc}"
+    # NEW FEATURE: Added severity level to prioritize the disaster
+    sev = input("Enter Severity (Low/Medium/High): ")
+    disaster_reports[r_id] = f"Type: {typ}, Location: {loc}, Severity: {sev}"
     print("Report saved successfully.")
 
   elif choice == "2":
